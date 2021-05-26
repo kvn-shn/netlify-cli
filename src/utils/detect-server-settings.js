@@ -196,6 +196,7 @@ const handleCustomFramework = ({ devConfig, log }) => {
     frameworkPort: devConfig.targetPort,
     dist: devConfig.publish || getDefaultDist({ log }),
     framework: '#custom',
+    pollingStrategies: devConfig.pollingStrategies || [],
   }
 }
 
