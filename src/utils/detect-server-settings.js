@@ -271,7 +271,6 @@ const detectServerSettings = async (devConfig, flags, projectDir, log) => {
   })
   const functionsDir = devConfig.functions || settings.functions
 
-  console.log(settings)
   return {
     ...settings,
     port: acquiredPort,
